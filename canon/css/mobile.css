@@ -1,0 +1,460 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+@font-face {
+  font-family: 'NanumGothic', sans-serif;
+  src: url(../font/나눔고딕L.ttf);
+}
+@font-face{
+  font-family: 'Helvetica', sans-serif;
+}
+
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none; color: #333;}
+body{font-family: 'NanumGothic',sans-serif; color: #333;}
+button{outline: 0; background: none; border: none; cursor: pointer;}
+section{position: relative; top: 50px;}
+article{position: relative; top:-2px;}
+h2{margin-top: 30px; margin-left: 10px; font-size: 20px;}
+.blind{font-size: 0; text-indent: -9999px; position: absolute; left: -9999px;}
+/* label{display: inline-block; vertical-align: middle; cursor: pointer;} */
+span{display: inline-block;}
+input[type=checkbox];
+img {width: 100%;}
+/*--------------------------------------------------------------------------------*/
+.icon {
+  display: inline-block;
+  background: url(../img/sprite_m.png);
+}
+
+.icon-arrow-right{
+  width: 16px; height: 26px;
+  background-position: -1px 2px
+}
+.icon-search {
+  width: 20px; height: 20px;
+  background-position: -30px -4px;
+}
+.search{
+  width: 30px; height: 30px;
+  background-position: -30px -4px;
+}
+.search-form .icon-close{
+  width: 30px; height: 30px;
+  background-position: -66px -6px;
+}
+.icon-play{
+  width: 25px; height: 25px;
+  background-position: -307px -75px;
+}
+.icon-registration {
+  width: 50px; height: 50px;
+  background-position: -5px -40px;
+}
+.icon-skill {
+  width: 50px; height: 50px;
+  background-position: -71px -40px;
+}
+.icon-store {
+  width: 50px; height: 50px;
+  background-position: -141px -40px;
+}
+.icon-as {
+  width: 50px; height: 50px;
+  background-position: -211px -40px;
+}
+.icon-go {
+  width:12px; height: 50px;
+  background-position: -3px 12px;
+}
+.icon-home{
+  width:10px; height: 10px;
+  background-position: -6px -99px;
+}
+.icon-call{
+  width:10px; height: 10px;
+  background-position: -24px -100px;
+}
+.login-popup .icon-close{
+  width:30px; height: 30px;
+  background-position: -156px -6px;
+}
+.login-popup .icon-id{
+  width: 35px;height: 35px;
+  background-position: -111px -112px;
+}
+.login-popup .icon-pw{
+  width: 35px;height: 35px;
+  background-position: -143px -109px;
+}
+.gallery-popup .icon-close{
+  width:30px; height: 30px;
+  background-position: -156px -6px;
+}
+/*--------------------------------------------------------------------------------*/
+/*header*/
+header {
+  position: fixed;
+  width: 100%; height: 50px;
+  z-index: 99;
+}
+h1 {
+   text-align: center;
+   padding-top: 5px;
+   box-sizing: border-box;
+   background: #333;
+ }
+#menu{display: none;}
+.menu *,nav{transition: 0.5s;}
+.menu {
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  width: 25px; height: 30px;
+  z-index: 99;
+}
+.menu span {
+  position: absolute;
+  top: 6px;
+  width: 25px; height: 3px;
+  background: #fff;
+}
+.menu span:nth-child(1){bottom: 3px; top: auto;}
+.menu span:nth-child(2){top: 50%;}
+.menu span:nth-child(3){top: 7px;}
+
+#menu:checked + label span:nth-child(1){bottom: 40%;}
+#menu:checked + label span:nth-child(2){opacity: 0;}
+#menu:checked + label span:nth-child(3){top: 50%;}
+#menu:checked ~ nav{left: 0;}
+/*------/header ======================================*/
+nav{
+  position: fixed;
+  top: 48px; bottom: 0;
+  left: -100%;
+  width: 100%;
+  background: #fff;
+  z-index: 99;
+  overflow-y: auto;
+}
+nav .top {padding-top: 20px;}
+nav .top a{display: inline-block; position: absolute; right: 10px;}
+
+nav .gnb {margin: 30px 10px 0 10px;}
+nav .gnb li a{
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 22px;
+  font-weight: bold;
+}
+nav .gnb li:nth-child(1) a{margin-top: 0;}
+nav .gnb li .icon-arrow-right{
+  position: absolute;
+  right: 10px;
+  width: 16px; height: 30px;
+}
+nav .bottom {height: 30px; margin: 35px 10px;}
+nav .bottom .icon-search {
+  position: absolute;
+  right: 10px;
+  width: 30px; height: 30px;
+  margin-top: 2px;
+}
+nav .bottom .search-form {
+  display: none;
+  position: absolute;
+  left: 10px;
+  width: calc(100% - 60px);
+  z-index: 9999;
+}
+nav .bottom .search-form input {
+  width: 100%; height: 31px;
+  text-indent: 10px;
+}
+nav .bottom .search-form .search {
+  position: absolute;
+  top: 0; right: 0px;
+  margin-top: 2px;
+  width: 30px; height: 30px;
+}
+nav .bottom .search-form .icon-close {
+  position: absolute;
+  top: 0;
+  right: -45px;
+  width: 30px; height: 30px;
+  margin-top: 2px;
+}
+nav .sns {margin-top: 20px;}
+nav .sns li{float: left;}
+nav .sns li a{display: inline-block; margin-left: 5px;}
+nav .sns li:nth-child(1) a{margin-left: 0;}
+/*//------header==================================================*/
+
+/*//------/ main======================================================*/
+article.main-slide {
+  position: relative;
+  width: 100%;
+}
+.swiper-container .swiper-slide img {width: 100%;}
+.controls {
+  position: relative;
+  top: -5px;
+  height: 35px;
+  background: #333;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction
+{color: #fff; top: 8px;}
+.controls .icon-play{
+  position: absolute;
+  top: 5px; left: 55%;
+  width: 25px; height: 25px;
+  z-index: 9999;
+  display: none;
+}
+.controls .icon-pause {
+  position: absolute;
+  top: 5px; left: 55%;
+  width: 25px; height: 25px;
+  background: url(../img/mobile/icon-pause.png) no-repeat;
+  z-index: 9999;
+}
+
+{color: #fff; width: 50px; top: 6px; font-size: 20px;}
+/*//------main======================================================*/
+
+/*//------new product======================================================*/
+.new-product ul{margin: 20px 10px 0 10px;}
+.new-product ul li { margin-bottom: 20px;}
+.new-product ul li .wrap{
+  position: relative;
+  height: 100%;
+}
+.new-product ul li .wrap img{ width: 100%;}
+.new-product ul li .wrap .img-box{margin-left: 10px;}
+.new-product ul li .wrap .text-box p{margin-left: 10px; font-size: 12px;}
+/*//-------/new product=====================================================*/
+
+/*//------survice======================================================*/
+.survice .swiper-container {margin-top: 15px;}
+.survice .text-box {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+   text-align: center;
+  color: #fff;
+}
+.survice .text-box p{font-family: Helvetica,sans-serif; font-weight: lighter; font-size: 19px;}
+.survice .text-box a{
+  display: inline-block;
+  color: #fff; font-size: 10px;
+  outline: 1px solid #fff;
+  margin-top:10px;
+  padding: 5px 15px; box-sizing: border-box;
+}
+.survice .swiper-pagination {bottom: 15px; width: 100%;}
+
+.survice .swiper-pagination-bullet{
+  width: 40px; height: 5px;
+  margin-left: 20px;
+  background: #fff;
+  border-radius: 0;
+}
+.survice .swiper-pagination-bullet-active{
+  background: #d9332c;
+}
+/*------/ survice ======================================================================================*/
+
+/*------support ======================================================================================*/
+.customer-support ul{margin: 15px 10px 0 10px;}
+.customer-support ul li {position: relative; height: 50px; margin-top: 30px;}
+.customer-support i {
+  position: absolute;
+  width: 50px; height: 50px;
+}
+.customer-support .text-box{ height: 50px; padding-top: 5px; box-sizing: border-box; margin-left: 70px;}
+.customer-support .text-box p{margin-top: 5px; font-size: 10px;}
+.customer-support a {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  display: block;
+  width: 12px; height: 50px;
+}
+/*------/ support ======================================================================================*/
+
+/*------gallery ======================================================================================*/
+.gallery ul{margin: 15px 10px 0 10px;}
+.gallery ul li{display: none;}
+.gallery ul li .wrap img {width: 100%; display: block;}
+.gallery button {
+  position: relative;
+  top: 20px; left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 20px; box-sizing: border-box;
+  font-size: 10px; font-weight: bold;
+  text-align: center; color: #fff;
+  background: #d9332c;
+}
+/*------/ gallery ======================================================================================*/
+
+/*---- footer ===================================================================*/
+footer {position: relative; margin-top: 100px;}
+footer .site li {height: 60px; background: #666; border-bottom: 1px solid #ccc;}
+footer .site li a{
+  display: block; text-align: center;
+  line-height: 60px; font-weight: bold;
+  color: #ccc;
+  font-size: 18px;
+}
+footer .contact{height: 40px; background: #ccc;}
+footer .contact ul{margin: 0 10px;}
+footer .contact li{float: left;}
+footer .contact li a{
+  display: block;
+  line-height: 40px;
+  margin-left: 13px;
+  text-align: center;
+  color: #666;
+}
+footer .contact li:nth-child(1) a{margin-left: 0;}
+
+.address {background: #333; padding-bottom: 20px;}
+.address h2{margin-top: 0; padding: 20px 0 15px 0; box-sizing: border-box;}
+.address h2 img {width: 105px;}
+.address ul {margin: 0px 10px;}
+.address ul li {color: #ccc; font-size: 12px; margin-top: 5px;}
+.address ul li i{
+  position: relative;
+  width: 15px; height: 15px;
+}
+
+.copyright {
+  background: #333;
+  border-top: 1px solid #ccc;
+  color: #ccc;
+  font-size: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.copyright mark{color: #d9332c; background: none;}
+/*----/ footer ===================================================================*/
+
+/*-----login popup*/
+.login-popup {
+  display: none;
+  position: fixed;
+  top: 0; bottom: 0;
+  width: 100%;
+  background: url(../img/mobile/login_bg.jpg) no-repeat;
+  background-size: cover;
+  z-index: 9999;
+}
+.login-popup .icon-close {
+  position: absolute;
+  top: 20px; right: 20px;
+  width: 30px; height: 30px;
+}
+.login-popup .img-box {
+  text-align: center;
+  margin-top: 75px;
+}
+.login-popup .wrap p{
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 27px;
+  color: #fff;
+  margin-top: 45px;
+  text-align: center;
+}
+.login-popup .wrap form {
+  position: relative;
+  margin: 45px 65px 0 65px;
+}
+.login-popup .wrap form .input-group:nth-child(2){margin-top:25px;}
+.login-popup .wrap form label {
+  position: absolute;
+  display: inline-block;
+  width: 35px; height: 35px;
+  font-size: 0;
+  background: #ccc;
+}
+.login-popup .wrap form i {
+  position: absolute;
+  width: 35px; height: 35px;
+}
+.login-popup .wrap form input {
+  padding-left: 35px;
+  box-sizing: border-box;
+  border: 0;
+  width: 100%; height: 35px;
+  text-indent: 10px;
+}
+.login-popup .wrap form button{
+  width: 100%; height: 40px;
+  background: #6a1c1a;
+  margin-top: 25px;
+  font-size: 20px; color: #fff;
+}
+form input:focus{
+  background: #333;
+  color:#fff;
+  outline: 1px solid #333;
+}
+form input:focus::-webkit-input-placeholder{color: #fff;}
+.login-popup .row {
+  position: relative;
+  margin: 20px 65px 0 65px;
+}
+.login-popup .row a {
+  display: inline-block;
+  color: #fff;
+  font-size: 15px;
+}
+#on-off{ display: none;}
+.login-popup .row .btn-save {
+  position: absolute;
+  top: 0px; right: 0px;
+  color: #fff; font-size: 15px;
+}
+.login-popup .row .btn-save .on-off {
+  position: relative;
+  display: inline-block;
+  width: 40px; height: 18px;
+  border-radius: 10px;
+  background: #ccc;
+}
+.on-off .btn{
+  width:18px; height: 18px;
+  border-radius: 50%;
+  background: #666;
+  box-sizing: border-box;
+  margin:-4px 1px;
+  transition: 0.5s;
+}
+#on-off:checked + label .btn{margin-left:20px; background: #d9332c;}
+
+/*------/ login-popup =============================================*/
+
+/*gallery popup*/
+.gallery-popup {
+  display: none;
+  position: fixed;
+  top: 0; bottom: 0;
+  width: 100%; height: 100%;
+  background: #333333;
+  z-index: 9999;
+}
+.gallery-popup .icon-close {
+  position: absolute;
+  top: 20px; right: 20px;
+  width: 30px; height: 30px;
+  z-index: 88;
+}
+.gallery-popup .swiper-container{
+  position: relative;
+  background: #333;
+  bottom: 0;
+  width: 100%; height: 100%;
+}
+.gallery-popup .swiper-wrapper{width: 100%; height: 90%;}
+.gallery-popup .swiper-wrapper img{width: 100%; height: 100%; display: block;}
+.gallery-popup .text-box{bottom: 0; margin:10px 10px; color: #fff; font-size: 20px; }

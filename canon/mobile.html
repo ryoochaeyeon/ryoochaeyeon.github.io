@@ -6,23 +6,27 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CANON</title>
   <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/mobile.js"></script>
 </head>
 <body>
   <header>
-    <h1><a href="#"><img src="" alt="Canon"></a></h1>
-    <input type="menu" id="menu">
+    <h1><a href="#"><img src="img/mobile/mobile-logo.png" alt="Canon"></a></h1>
+    <input type="checkbox" id="menu">
     <label for="menu" class="menu">
       <span></span>
       <span></span>
       <span></span>
     </label>
-  </header>
 
   <nav>
     <h2 class="blind">메뉴팝업창</h2>
     <div class="top">
-      <button>ClOSE</button>
-      <a href="#">LOGIN/JOIN</a>
+      <a href="#" id="login">LOGIN/JOIN</a>
     </div>
     <ul class="gnb">
       <li>
@@ -62,8 +66,8 @@
         <a href="#">액세서리<i class="icon icon-arrow-right"></i></a>
       </li>
     </ul>
-    <div class="bottom">
-      <button class="icon icon-search"><span classs="blind">검색</span></button>
+   <div class="bottom">
+    <button class="icon icon-search"><span class="blind">검색</span></button>
       <!-- 검색팝업창 -->
       <form action="" class="search-form">
         <input type="text" placeholder="검색어를 입력하세요.">
@@ -73,54 +77,55 @@
         </button>
       </form>
       <ul class="sns">
-        <li><a href="#"><img src="" alt="facebook"></a></li>
-        <li><a href="#"><img src="" alt="instagram"></a></li>
-        <li><a href="#"><img src="" alt="youtube"></a></li>
-        <li><a href="#"><img src="" alt="blog"></a></li>
-        <li><a href="#"><img src="" alt="kakaostory"></a></li>
-        <li><a href="#"><img src="" alt="twitter"></a></li>
+        <li><a href="#"><img src="img/facebook.png" alt="facebook"></a></li>
+        <li><a href="#"><img src="img/instagram.png" alt="instagram"></a></li>
+        <li><a href="#"><img src="img/youtube.png" alt="youtube"></a></li>
+        <li><a href="#"><img src="img/blog.png" alt="blog"></a></li>
+        <li><a href="#"><img src="img/kakaostory.png" alt="kakaostory"></a></li>
+        <li><a href="#"><img src="img/twitter.png" alt="twitter"></a></li>
       </ul>
     </div>
   </nav>
-
-    <!-- main  -->
-  <section>
-    <articel class="main-slide">
+</header>
+<!-- main  -->
+ <section>
+    <article class="main-slide">
       <h2 class="blind">메인슬라이드</h2>
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="" alt="어두운 환경에서 깨끗한 이미지를 담을 수 있는 카메라.">
+            <img src="img/mobile/mobile-main1.jpg" alt="어두운 환경에서 깨끗한 이미지를 담을 수 있는 카메라.">
           </div>
           <div class="swiper-slide">
-            <img src="" alt="EOS R">
+            <img src="img/mobile/mobile-main2.jpg" alt="EOS R">
           </div>
           <div class="swiper-slide">
-            <img src="" alt="digic 7">
+            <img src="img/mobile/mobile-main3.jpg" alt="digic 7">
           </div>
           <div class="swiper-slide">
-            <img src="" alt="">
+            <img src="img/mobile/mobile-main4.jpg" alt="">
           </div>
           <div class="swiper-slide">
-            <img src="" alt="">
+            <img src="img/mobile/mobile-main5.jpg" alt="">
           </div>
         </div>
       </div>
       <!-- pagination  -->
-      <div class="controls">
-        <button class="icon icon-play"><span class="blind">재생/정지</span></button>
+       <div class="controls">
+        <button class="icon icon-play"><span class="blind">재생</span></button>
+        <button class="icon-pause"><span class="blind">정지</span></button>
         <div class="swiper-pagination"></div>
       </div>
-    </articel>
+    </article>
 
-
-    <article class="new-product">
+  <!-- new product -->
+   <article class="new-product">
       <h2>NEW PRODUCT</h2>
       <ul class="row">
         <li class="col-xs-6 col-sm-6">
           <div class="wrap">
             <div class="img-box">
-              <img src="" alt="새로운 신화 EOS R">
+              <img src="img/mobile/mobile-eosr.jpg" alt="새로운 신화 EOS R">
             </div>
             <div class="text-box">
               <p>새로운 신화 <br>EOS R</p>
@@ -130,7 +135,7 @@
         <li class="col-xs-6 col-sm-6">
           <div class="wrap">
             <div class="img-box">
-              <img src="" alt="RF 35mm F1.8 MACRO IS STM EOS R">
+              <img src="img/mobile/mobile-35mm.jpg" alt="RF 35mm F1.8 MACRO IS STM EOS R">
             </div>
             <div class="text-box">
               <p>RF 35mm F1.8<br>MACRO IS STM EOS R</p>
@@ -140,7 +145,7 @@
         <li class="col-xs-6 col-sm-6">
           <div class="wrap">
             <div class="img-box">
-              <img src="" alt="RF 28-70mm F2L USM">
+              <img src="img/mobile/mobile-28mm.jpg" alt="RF 28-70mm F2L USM">
             </div>
             <div class="text-box">
               <p>RF 28-70mm F2L <br>USM</p>
@@ -150,7 +155,7 @@
         <li class="col-xs-6 col-sm-6">
           <div class="wrap">
             <div class="img-box">
-              <img src="" alt="RF 50mm F1.2L USM">
+              <img src="img/mobile/mobile-50mm.jpg" alt="RF 50mm F1.2L USM">
             </div>
             <div class="text-box">
               <p>RF 50mm F1.2L<br>USM</p>
@@ -161,36 +166,51 @@
     </article>
     <!-- / new-product -->
 
-    <!-- 세개가 나오고 화살표 없앨 것인지 고민 -->
+    <!--suvice -->
     <article class="survice">
       <h2>SURVICE</h2>
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <a href="#">
-              <p>캐논 플렉스</p>
-            </a>
+            <div class="text-box">
+              <p>CANON FLEX</p>
+              <a href="#">자세히보기</a>
+            </div>
+            <div class="img-box">
+              <img src="img/mobile/canon_flex.jpg" alt="캐논플렉스">
+            </div>
           </div>
           <div class="swiper-slide">
-            <a href="#">
-              <p>캐논스마트렌즈파인더</p>
-            </a>
+            <div class="text-box">
+              <p>CANON SMART LENS FINDER</p>
+              <a href="#">자세히보기</a>
+            </div>
+            <div class="img-box">
+              <img src="img/mobile/canon_smartlensfinder.jpg" alt="캐논 스마트렌즈 파인더">
+            </div>
           </div>
           <div class="swiper-slide">
-            <a href="#">
-              <p>마이크로사이트</p>
-            </a>
+            <div class="text-box">
+              <p>MICROSITE</p>
+              <a href="#">자세히보기</a>
+            </div>
+            <div class="img-box">
+              <img src="img/mobile/microsite.jpg" alt="마이크로사이트">
+            </div>
           </div>
           <div class="swiper-slide">
-            <a href="#">
+            <div class="text-box">
               <p>CPS</p>
-            </a>
+              <a href="#">자세히보기</a>
+            </div>
+            <div class="img-box">
+              <img src="img/mobile/cps.jpg" alt="cps">
+            </div>
           </div>
         </div>
       </div>
       <!-- swiper button  -->
-      <div class="swiper-button-next"><i class="icon icon-next"></i></div>
-      <div class="swiper-button-prev"><i class="icon icon-prev"></i></div>
+     <div class="swiper-pagination"></div>
     </article>
     <!-- / survice -->
 
@@ -198,11 +218,7 @@
         <h2>CUSTOMER SUPPORT</h2>
         <ul>
           <li>
-            <!-- sprite로 변경 -->
             <i class="icon icon-registration"></i>
-            <div class="img-box">
-              <img src="" alt="정품등록">
-            </div>
             <div class="text-box">
               <b>정품등록</b>
               <p>정품을 등록하고 다양한 혜택을 받으세요.</p>
@@ -244,79 +260,122 @@
         </ul>
     </article>
   <!--/ cutomer support  -->
-    <article class="gallery">
-      <!-- 그리드 맞추기 -->
+  <article class="gallery">
+    <h2>GALLERY</h2>
       <ul class="row">
-        <li>
-          <div class="wrap">
-            <img src="" alt="gallery1">
-          </div>
-        </li>
-        <li>
-          <div class="wrap">
-            <img src="" alt="gallery2">
-          </div>
-        </li>
-        <li>
-          <div class="wrap">
-            <img src="" alt="gallery3">
-          </div>
-        </li>
-        <li>
-          <div class="wrap">
-            <img src="" alt="gallery4">
-          </div>
-        </li>
-        <li>
-          <div class="wrap">
-            <img src="" alt="gallery5">
-          </div>
-        </li>
-        <li>
-          <div class="wrap">
-            <img src="" alt="gallery6">
-          </div>
-        </li>
-        <li>
-          <div class="wrap">
-            <img src="" alt="gallery7">
-          </div>
-        </li>
-        <li>
-          <div class="wrap">
-            <img src="" alt="gallery8">
-          </div>
-        </li>
-        <li>
-          <div class="wrap">
-            <img src="" alt="gallery9">
-          </div>
-        </li>
-      </ul>
-      <button>더보기</button>
+          <li class="col-xs-4 col-sm-4">
+            <div class="wrap">
+              <img src="img/mobile/gallery1.jpg" alt="gallery1" class="g1">
+            </div>
+          </li>
+          <li class="col-xs-4 col-sm-4">
+            <div class="wrap">
+              <img src="img/mobile/gallery2.jpg" alt="gallery2" class="g2">
+            </div>
+          </li>
+          <li class="col-xs-4 col-sm-4">
+            <div class="wrap">
+              <img src="img/mobile/gallery3.jpg" alt="gallery3" class="g3">
+            </div>
+          </li>
+          <li class="col-xs-4 col-sm-4">
+            <div class="wrap">
+              <img src="img/mobile/gallery4.jpg" alt="gallery4" class="g4">
+            </div>
+          </li>
+          <li class="col-xs-4 col-sm-4">
+            <div class="wrap">
+              <img src="img/mobile/gallery5.jpg" alt="gallery5" class="g5">
+            </div>
+          </li>
+          <li class="col-xs-4 col-sm-4">
+            <div class="wrap">
+              <img src="img/mobile/gallery6.jpg" alt="gallery6" class="g6">
+            </div>
+          </li>
+          <li class="col-xs-4 col-sm-4">
+            <div class="wrap">
+              <img src="img/mobile/gallery7.jpg" alt="gallery7" class="g7">
+            </div>
+          </li>
+          <li class="col-xs-4 col-sm-4">
+            <div class="wrap">
+              <img src="img/mobile/gallery8.jpg" alt="gallery8" class="g8">
+            </div>
+          </li>
+          <li class="col-xs-4 col-sm-4">
+            <div class="wrap">
+              <img src="img/mobile/gallery9.jpg" alt="gallery9" class="g9">
+            </div>
+          </li>
+          <li class="col-xs-4 col-sm-4">
+            <div class="wrap">
+              <img src="img/mobile/gallery10.jpg" alt="gallery10" class="g10">
+            </div>
+          </li>
+          <li class="col-xs-4 col-sm-4">
+            <div class="wrap">
+              <img src="img/mobile/gallery11.jpg" alt="gallery11" class="g11">
+            </div>
+          </li>
+          <li class="col-xs-4 col-sm-4">
+            <div class="wrap">
+              <img src="img/mobile/gallery12.jpg" alt="gallery12" class="g12">
+            </div>
+          </li>
+          <li class="col-xs-4 col-sm-4">
+            <div class="wrap">
+              <img src="img/mobile/gallery13.jpg" alt="gallery13" class="g13">
+            </div>
+          </li>
+          <li class="col-xs-4 col-sm-4">
+            <div class="wrap">
+              <img src="img/mobile/gallery14.jpg" alt="gallery14" class="g14">
+            </div>
+          </li>
+          <li class="col-xs-4 col-sm-4">
+            <div class="wrap">
+              <img src="img/mobile/gallery15.jpg" alt="gallery15" class="g15">
+            </div>
+          </li>
+          <li class="col-xs-4 col-sm-4">
+            <div class="wrap">
+              <img src="img/mobile/gallery16.jpg" alt="gallery16" class="g16">
+            </div>
+          </li>
+          <li class="col-xs-4 col-sm-4">
+            <div class="wrap">
+              <img src="img/mobile/gallery17.jpg" alt="gallery17" class="g17">
+            </div>
+          </li>
+          <li class="col-xs-4 col-sm-4">
+            <div class="wrap">
+              <img src="img/mobile/gallery18.jpg" alt="gallery18" class="g18">
+            </div>
+          </li>
+        </ul>
+        <button class="more">더보기</button>
     </article>
   </section>
 
   <footer>
     <ul class="site">
       <li><a href="#">캐논코리아 통합 사이트</a></li>
-      <li>
-        <a href="#">캐논 코리아 비즈니스 솔루션</a>
-      </li>
-      <li>
-        <a href="#">캐논 글로벌</a>
-      </li>
+      <li><a href="#">캐논 코리아 비즈니스 솔루션</a></li>
+      <li><a href="#">캐논 글로벌</a></li>
     </ul>
 
-    <ul class="contact">
-      <li><a href="#">회사소개</a></li>
-      <li><a href="#">이용약관</a></li>
-      <li><a href="#">개인정보처리방침</a></li>
-      <li><a href="#">매장안내</a></li>
-    </ul>
+    <div class="contact">
+      <ul>
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">매장안내</a></li>
+      </ul>
+    </div>
 
     <div class="address">
-      <h2><img src="" alt="canon"></h2>
+      <h2><img src="img/mobile/footer_logo.png" alt="canon"></h2>
       <ul>
         <li><i class="icon icon-home"></i>서울특별시 강남구 테헤란도 607 캐논타워 5층</li>
         <li><i class="icon icon-call"></i>1588-8133</li>
@@ -328,36 +387,56 @@
     </div>
 
     <div class="copyright">
-      COPYRIGHT © CANON KOREA CONSUMER IMAGING Inc.<br> All RIGHTS RESERVED
+      COPYRIGHT © <mark>CANON KOREA CONSUMER IMAGING Inc.</mark><br> All RIGHTS RESERVED
     </div>
   </footer>
 
   <div class="login-popup">
-    <img src="" alt="">
+    <h2 class="blind">로그인 팝업창</h2>
+    <div class="img-box">
+      <img src="img/mobile/login.png" alt="">
+    </div>
     <button class="icon icon-close">
       <span class="blind">닫기</span>
     </button>
-    <div class="wrap">
+   <div class="wrap">
       <p>Welcome to CANON</p>
-      <form action="#">
+     <form action="#">
         <div class="input-group">
-          <label for="id">아이디</label>
-          <input type="text" placeholder="아이디를 입력하세요.">
+          <label for="id"><i class="icon icon-id"></i>아이디</label>
+          <input type="text" placeholder="아이디를 입력하세요." id="id">
         </div>
         <div class="input-group">
-          <label for="pw">비밀번호</label>
-          <input type="password" placeholder="비밀번호를 입력하세요.">
+          <label for="pw"><i class="icon icon-pw"></i>비밀번호</label>
+          <input type="password" placeholder="비밀번호를 입력하세요." id="pw">
         </div>
-        <button tpye="submit">LOGIN</button>
+        <button type="button" id="btn_login">LOGIN</button>
       </form>
       <div class="row">
         <a href="#">ID/PW찾기</a>
         <div class="btn-save">
-          <span>아이디 저장</span>
-          <!-- 체크박스 -->
-          <button class="on"><span class="blind">on</span></button>
+          <span id="id-save">아이디 저장</span>
+          <input type="checkbox" id="on-off">
+          <label for="on-off" class="on-off">
+            <span class="btn"></span>
+          </label>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="gallery-popup">
+    <h2 class="blind">갤러리 팝업창</h2>
+    <button class="icon icon-close">
+      <span class="blind">닫기</span>
+    </button>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+
+      </div>
+      <!-- <div class="text-box">
+        <p>봄을 맞이하는 순간</p>
+      </div> -->
     </div>
   </div>
   </body>
