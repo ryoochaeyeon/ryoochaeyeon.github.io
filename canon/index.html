@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Canon</title>
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+  <script src="js/main.js" charset="utf-8"></script>
+  <script>
+    var filter = "win16|win32|win64|macintel|mac|"; // PC일 경우 가능한 값
+    if( navigator.platform){
+      if( filter.indexOf(navigator.platform.toLowerCase())<0 ){
+        alert("모바일에서 접속하셨습니다");
+        location.href=mobile.html;
+      }else{
+        alert("pc에서 접속하셨습니다");
+      }
+
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="center">
+      <h1><a href="#"><img src="img/logo.png" alt="Canon"></a></h1>
+      <ul class="login">
+        <li>
+          <a href="#">LANGUAGE</a>
+          <ul>
+            <li><a href="#">KOREAN</a></li>
+            <li><a href="#">ENGLISH</a></li>
+          </ul>
+        </li>
+        <li><a href="#" id="logout">LOGIN</a></li>
+        <li><a href="#" id="my">JOIN</a></li>
+      </ul>
+
+      <button class="icon icon-search"><span class="blind">검색창띄우기</span></button>
+      <!-- 검색 팝업창 -->
+     <form action="test.html" class="search-form">
+        <input type="text" placeholder="검색어를 입력하세요.">
+        <button type="submit" class="icon search"><span class="blind">검색</span></button>
+        <button type="button" class="icon icon-close">
+          <span class="blind">닫기</span>
+        </button>
+      </form>
+    </div>
+
+    <nav>
+      <ul class="gnb center">
+        <li class="active">
+          <a href="#">제품</a>
+          <div class="dropdown">
+            <div class="center">
+              <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/dslr-g.jpg" alt="DSLR">
+                        <span>DSLR</span>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/mirrorless-g.jpg" alt="미러리스">
+                        <span>미러리스</span>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/lens-g.jpg" alt="렌즈">
+                        <span>렌즈</span>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/compact-camera-g.jpg" alt="컴팩트 카메라">
+                        <span>컴팩트 카메라</span>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/photoprinter-g.jpg" alt="포토프린터">
+                        <span>포토프린터</span>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/camcorder-g.jpg" alt="캠코더">
+                        <span>캠코더</span>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/cinema-g.jpg" alt="시네마EOS">
+                        <span>시네마EOS</span>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/bctv-g.jpg" alt="BCTV">
+                        <span>BCTV</span>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/display-g.jpg" alt="디스플레이">
+                        <span>디스플레이</span>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/binoculars-g.jpg" alt="쌍안경">
+                        <span>쌍안경</span>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/projector-g.jpg" alt="프로젝터">
+                        <span>프로젝터</span>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/accessories-g.jpg" alt="액세서리">
+                        <span>액세서리</span>
+                      </a>
+                    </div>
+                    <!-- 총 12개 -->
+                  </div>
+              </div>
+              <div class="swiper-button-next"><i class="icon icon-next"></i></div>
+              <div class="swiper-button-prev"><i class="icon icon-prev"></i></div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">고객지원</a></li>
+        <li><a href="#">이벤트</a></li>
+        <li><a href="#">E-store</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Magazine</a></li>
+        <li><a href="#">아카데미</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- /header -->
+
+   <section>
+    <article class="swiper-container main-slide">
+      <h2 class="blind">메인슬라이드</h2>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/main1.jpg" alt="어둠 속에서 흔들림 없는 카메라"></div>
+        <div class="swiper-slide"><img src="img/main2.jpg" alt="super pixel"></div>
+        <div class="swiper-slide"><img src="img/main3.jpg" alt="cmos"></div>
+        <div class="swiper-slide"><img src="img/main4.jpg" alt="eos 200d"></div>
+        <div class="swiper-slide"><img src="img/main5.jpg" alt="어둠 속에서 흔들림 없는 카메라"></div>
+      </div>
+      <div class="controls">
+        <div class="swiper-pagination"></div>
+        <button class="icon icon-play"><span class="blind">재생</span></button>
+        <button class="icon-pause"><span class="blind">정지</span></button>
+      </div>
+    </article>
+
+    <article class="new-product">
+      <h2>NEW PRODUCT</h2>
+      <div class="row">
+        <div class="col">
+          <div class="wrap"> <!-- 스타일 주는 곳-->
+             <div class="img-box">
+              <img src="img/eosr.jpg" alt="eosr">
+              <button class="icon icon-plus">
+                <img src="img/icon-plus.jpg" alt="자세히보기1" class="x1">
+              </button>
+            </div>
+            <div class="text-box">
+              <p>새로운 진화의 시작<br>EOS R</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="wrap">
+            <div class="img-box">
+              <img src="img/35mm.jpg" alt="RF 35mm F1.8 MACRO IS STM">
+              <button class="icon icon-plus">
+                <img src="img/icon-plus.jpg" alt="자세히보기2" class="x2">
+              </button>
+            </div>
+            <div class="text-box">
+              <p>RF 35mm F1.8<br>MACRO IS STM</p>
+            </div>
+          </div>
+          <div class="wrap">
+            <div class="img-box">
+              <img src="img/28mm.jpg" alt="RF 28-70mm F2L USM">
+              <button class="icon icon-plus">
+                <img src="img/icon-plus.jpg" alt="자세히보기3" class="x3">
+              </button>
+            </div>
+            <div class="text-box">
+              <p>RF 28-70mm F2L<br>USM</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="wrap">
+            <div class="img-box">
+              <img src="img/50mm.jpg" alt="RF 50mm F1.2L USM">
+              <button class="icon icon-plus">
+                <img src="img/icon-plus.jpg" alt="자세히보기4" class="x4">
+              </button>
+            </div>
+            <div class="text-box">
+              <p>RF 50mm F1.2L<br>USM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- /NEW PRODUCTS -->
+
+    <article class="survice">
+      <h2>SURVICE</h2>
+      <ul>
+        <li>
+          <div class="wrap">
+            <div class="img-box">
+              <img src="img/canonflex-g.jpg" alt="캐논 플렉스">
+            </div>
+            <div class="text-box">
+              <h3><span>캐논플렉스</span></h3>
+              <p>사진,영상,문화의 ‘즐거움’과 ‘체험’하는<br><br> 복합 문화 공간입니다.</p>
+              <a href="#">READ MORE</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="wrap">
+            <div class="img-box">
+              <img src="img/lensfinder-g.jpg" alt="캐논스마트 렌즈파인더">
+            </div>
+            <div class="text-box">
+              <h3><span>캐논스마트 렌즈파인더</span></h3>
+              <p>캐논 렌즈와 관련된 모든 정보를<br><br>스마트 렌즈파인더 한 곳에서 확인하세요.</p>
+              <a href="#">READ MORE</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="wrap">
+            <div class="img-box">
+              <img src="img/microsite-g.jpg" alt="마이크로사이트">
+            </div>
+            <div class="text-box">
+              <h3><span>마이크로사이트</span></h3>
+              <p>캐논의 대표 제품들을<br><br>마이크로 사이트에서 자세히 알아보세요.</p>
+              <a href="#">READ MORE</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="wrap">
+            <div class="img-box">
+              <img src="img/cps-g.jpg" alt="CPS">
+            </div>
+            <div class="text-box">
+              <h3><span>CPS</span></h3>
+              <p>캐논 정품을사용하는 프로 사진가를 위한<br><br>캐논만 특별한 서비스.  </p>
+              <a href="#">READ MORE</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </article>
+  </section>
+<!-- /service -->
+
+<!-- support -->
+  <section>
+    <article class="support">
+      <h2>CUSTOMER SUPPORT</h2>
+      <div class="center">
+        <ul class="support-nav">
+          <li>
+            <button class="support-icon icon-1">
+              <span class="blind">정품등록</span>
+              <img src="img/registation-w.png" alt="">
+            </button >
+          </li>
+          <li>
+            <button class="support-icon icon-2">
+              <span class="blind">기술지원</span>
+              <img src="img/skill.png" alt="">
+            </button >
+          </li>
+          <li>
+            <button class="support-icon icon-3">
+              <span class="blind">매장안내</span>
+              <img src="img/store-guide.png" alt="">
+            </button>
+          </li>
+          <li>
+            <button class="support-icon icon-4">
+              <span class="blind">AS안내</span>
+              <img src="img/as-store.png" alt="">
+            </button>
+          </li>
+        </ul>
+        <div class="text-box">
+          <h3>정품등록</h3>
+          <p>정품을 등록하고 다양한 혜택을 받으세요.</p>
+          <a href="#">바로가기</a>
+        </div>
+      </div>
+    </article>
+
+<!-- /support -->
+
+<!-- gallery -->
+    <article class="gallery center">
+      <h2>GALLERY</h2>
+      <div class="line">
+        <i class="icon icon-gallery">
+          <img src="img/galleryicon.jpg" alt="">
+        </i>
+      </div>
+
+    <nav class="gnb">
+        <ul>
+          <li class="btn active" data-filter="*">ALL</li>
+          <li class="btn" data-filter=".nature">풍경/자연</li>
+          <li class="btn" data-filter=".daily">일상/스냅</li>
+          <li class="btn" data-filter=".person">인물</li>
+          <li class="btn" data-filter=".model">모델/연출</li>
+          <li class="btn"><a href="#">더보기</a></li>
+        </ul>
+      </nav>
+    <div class="gallery-list">
+        <ul>
+          <li>
+            <div class="wrap item nature ">
+                <img src="img/gallery1.jpg" alt="gallery1">
+            </div>
+          </li>
+          <li>
+            <div class="wrap item nature">
+              <img src="img/gallery2.jpg" alt="gallery2">
+            </div>
+          </li>
+          <li>
+            <div class="wrap item daily">
+              <img src="img/gallery3.jpg" alt="gallery3">
+            </div>
+          </li>
+          <li>
+            <div class="wrap item person">
+              <img src="img/gallery4.jpg" alt="gallery4">
+            </div>
+          </li>
+          <li>
+            <div class="wrap item daily">
+              <img src="img/gallery5.jpg" alt="gallery5">
+            </div>
+          </li>
+          <li>
+            <div class="wrap item model">
+              <img src="img/gallery6.jpg" alt="gallery6" >
+            </div>
+          </li>
+          <li>
+            <div class="wrap item daily">
+              <img src="img/gallery7.jpg" alt="gallery7">
+            </div>
+          </li>
+          <li>
+            <div class="wrap item model">
+              <img src="img/gallery8.jpg" alt="gallery8">
+            </div>
+          </li>
+          <li>
+            <div class="wrap item nature">
+              <img src="img/gallery9.jpg" alt="gallery9">
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <a href="#" class="icon btn-top"><br>TOP<span class="blind">위로</span></a>
+    </article>
+  </section>
+<!-- /gallery -->
+
+<!-- footer -->
+  <footer>
+    <div class="center">
+      <h2><img src="img/footer_logo.png" alt="canon"></h2>
+       <ul>
+        <li><a href="#">캐논 코리아 통합시스템</a></li>
+        <li><a href="#">캐논 코리아 비즈니스 솔루션</a></li>
+        <li><a href="#">캐논 글로벌</a></li>
+      </ul>
+    </div>
+     <div class="middle">
+      <div class="center">
+        <ul class="info">
+          <li>
+            <i class="icon icon-home"></i>서울특별시 강남구 테헤란도 607 캐논타워 5층
+          </li>
+          <li>
+            <i class="icon icon-call"></i>1588-8133
+          </li>
+          <li>대표자 : YOSHIKAI SHUNJ</li>
+          <li>사업자등록번호 : 220-87-15734</li>
+          <li>통신판매업 신고번 : 강남11387호</li>
+          <li>캐논코리아슈머이미징㈜</li>
+        </ul>
+
+        <ul class="contact">
+          <li><a href="#">회사소개 </a> &nbsp;|</li>
+          <li><a href="#">이용약관 </a> &nbsp;|</li>
+          <li><a href="#">개인정보처리방침</a> &nbsp;|</li>
+          <li>
+            <a href="#" class="sitemap-open">사이트맵</a>
+          </li>
+        </ul>
+
+         <ul class="sns">
+          <li><a href="#"><img src="img/facebook.png" alt="facebook"></a></li>
+          <li><a href="#"><img src="img/instagram.png" alt="instagram"></a></li>
+          <li><a href="#"><img src="img/youtube.png" alt="youtube"></a></li>
+          <li><a href="#"><img src="img/blog.png" alt="blog"></a></li>
+          <li><a href="#"><img src="img/kakaostory.png" alt="kakao story"></a></li>
+          <li><a href="#"><img src="img/twitter.png" alt="twitter"></a></li>
+        </ul>
+      </div>
+      <div class="sitemap">
+        <div class="title">
+          <div class="center">
+             <ul class="sitemap-nav">
+               <li>
+                 <span>제품</span>
+                <ul>
+                   <li><a href="#">DSLR</a></li>
+                   <li><a href="#">미러리스</a></li>
+                   <li><a href="#">렌즈</a></li>
+                   <li><a href="#">컴팩트 카메라</a></li>
+                   <li><a href="#">포토프린터</a></li>
+                   <li><a href="#">캠코더</a></li>
+                   <li><a href="#">시네마 EOS</a></li>
+                   <li><a href="#">BCTV</a></li>
+                   <li><a href="#">디스플레이</a></li>
+                   <li><a href="#">커넥트 스테이션</a></li>
+                   <li><a href="#">쌍안경</a></li>
+                   <li><a href="#">액세서리</a></li>
+                   <li><a href="#">단종제품</a></li>
+               </ul>
+             </li>
+             <li>
+               <span>고객지원</span>
+                <ul>
+                   <li><a href="#">정품등록</a></li>
+                   <li><a href="#">기술지원</a></li>
+                   <li><a href="#">매장안내</a></li>
+                   <li><a href="#">AS안내</a></li>
+                </ul>
+             </li>
+             <li>
+               <span>이벤트</span>
+               <ul>
+                 <li><a href="#">진행중인 이벤트</a></li>
+                 <li><a href="#">종료된 이벤트</a></li>
+                 <li><a href="#">당첨자 발표</a></li>
+               </ul>
+             </li>
+             <li>
+               <span>E-store</span>
+                <ul>
+                 <li><a href="#">DSLR</a></li>
+                 <li><a href="#">미러리스</a></li>
+                 <li><a href="#">EF렌즈</a></li>
+                 <li><a href="#">컴펙트 카메라</a></li>
+                 <li><a href="#">포토프린터</a></li>
+                 <li><a href="#">캠코더</a></li>
+                 <li><a href="#">시네마 EOS</a></li>
+                 <li><a href="#">커넥트 스테이션</a></li>
+                 <li><a href="#">쌍안경</a></li>
+                 <li><a href="#">액세사리</a></li>
+                 <li><a href="#">상품기획전</a></li>
+                 <li><a href="#">리퍼 & 아울렛</a></li>
+               </ul>
+             </li>
+             <li>
+               <span>포토갤러리</span>
+                <ul>
+                 <li><a href="#">베스트</a></li>
+                 <li><a href="#">출사지</a></li>
+                </ul>
+             </li>
+             <li>
+               <span>매거진</span>
+               <ul>
+                 <li><a href="#">sns</a></li>
+                 <li><a href="#">포스트</a></li>
+                 <li><a href="#">리뷰</a></li>
+                 <li><a href="#">스냅샷</a></li>
+                 <li><a href="#">체험단</a></li>
+                 <li><a href="#">미디어</a></li>
+                 <li><a href="#">전시</a></li>
+                 <li><a href="#">피플</a></li>
+                 <li><a href="#">사회공헌</a></li>
+               </ul>
+             </li>
+           </ul>
+         </div>
+       </div>
+        <div class="title">
+          <div class="center">
+           <ul class="sitemap-nav">
+             <li>
+               <span>아카데미</span>
+                 <ul>
+                 <li><a href="#">아카데미 소개</a></li>
+                 <li><a href="#">오프라인 강의</a></li>
+                 <li><a href="#">온라인 강의</a></li>
+               </ul>
+             </li>
+             <li>
+               <span>모바일앱</span>
+                <ul>
+                   <li><a href="#">Smart Lens FInder</a></li>
+                   <li><a href="#">Canon Camera<br>Connect</a></li>
+                   <li><a href="#">Canon Print<br>Selphy</a></li>
+                   <li><a href="#">Canon Image<br>Gateway</a></li>
+                   <li><a href="#">Canon<br>Camera WIndow </a></li>
+                   <li><a href="#">Canon EOS<br>Remote</a></li>
+                 </ul>
+             </li>
+             <li>
+               <span>캐논플렉스</span>
+             </li>
+             <li>
+               <span>마이크로 사이트</span>
+             </li>
+             <li>
+               <span>캐논 갤러리</span>
+                 <ul>
+                   <li><a href="#">갤러리소개</a></li>
+                   <li><a href="#">전시소개</a></li>
+                   <li><a href="#">전시작가</a></li>
+                   <li><a href="#">프로그램</a></li>
+                 </ul>
+             </li>
+             <li>
+               <span>CPS</span>
+                <ul>
+                   <li><a href="#">My CPS</a></li>
+                   <li><a href="#">CPS Mem<br>bership</a></li>
+                   <li><a href="#">Canon<br>Master</a></li>
+                   <li><a href="#">Canon<br>Partnership<br>Studio</a></li>
+                   <li><a href="#">CPS<br>Workshop</a></li>
+                </ul>
+               </li>
+             </ul>
+           </div>
+        </div>
+    </div>
+  </div>
+    <div class="copyright">
+      <span>COPYRIGHT © <mark>CANON KOREA CONSUMER IMAGING Inc.</mark> All RIGHTS RESERVED</span>
+    </div>
+  </footer>
+
+  <!-- popup 창 ====================================================================== -->
+  <!--login 팝업창  -->
+    <div class="login-popup">
+      <h2><img src="img/login-icon.png" alt="login"></h2>
+      <button class="icon icon-close">
+        <span class="blind">닫기</span>
+      </button>
+      <div class="wrap">
+        <form action="#">
+          <div>
+            <label for="id">아이디</label>
+            <input type="text" placeholder="아이디를 입력하세요." id="id">
+          </div>
+          <div>
+            <label for="pw">비밀번호</label>
+            <input type="password" placeholder="비밀번호를 입력하세요." id="pw">
+          </div>
+          <button type="submit" id="btn-login">LOGIN</button>
+        </form>
+        <div class="row">
+          <a href="#">ID/PW 찾기</a>
+          <div class="btn-save">
+            <span>아이디 저장</span>
+            <button class="on">
+              <span class="btn"></span>
+              <span class="blind">on</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--/login 팝업창  -->
+
+  <!-- 주문 팝업창  -->
+  <div class="order-popup">
+    <h2 class="blind">주문 팝업창</h2>
+    <button class="icon icon-close">
+      <span class="blind">닫기</span>
+    </button>
+    <div class="img-box">
+      <div class="big-img">
+        <img src="img/35mm1-L.jpg" alt="확대 이미지">
+      </div>
+      <ul class="small-img">
+        <li>
+          <a href="#" class="active"><img src="img/35mm1-S.jpg" alt="썸네일1"></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/35mm2-S.jpg" alt="썸네일2"></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/35mm3-S.jpg" alt="썸네일3"></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/35mm4-S.jpg" alt="썸네일4"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="text-box">
+      <dl>
+        <dt><strong>RF 35mm F1.8<br>MACRO IS STMEOSR</strong></dt>
+        <dd>출시일 : 2018.11</dd>
+        <dd>원산지 : 타이완</dd>
+      </dl>
+      <a href="#">구매하기</a>
+    </div>
+  </div>
+</body>
+</html>
