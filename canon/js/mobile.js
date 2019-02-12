@@ -36,8 +36,8 @@ $(function(){
   })
   $('.icon-pause').click(function(){
     swiper.autoplay.stop();
-    $('.icon-pause').hide();
     $('.icon-play').show();
+    $('.icon-pause').hide();
   })
 /*-------/ main*/
 

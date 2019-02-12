@@ -45,11 +45,11 @@ img {width: 100%;}
 }
 .icon-play{
   width: 25px; height: 25px;
-  background-position: -307px -75px;
+  background-position: -378px -4px;
 }
 .icon-pause{
   width: 25px; height: 25px;
-  background-position: -307px -75px;
+  background-position: -405px -4px;
 }
 .icon-registration {
   width: 50px; height: 50px;
@@ -213,13 +213,13 @@ article.main-slide {
   top: 5px; left: 55%;
   width: 25px; height: 25px;
   z-index: 9999;
-  display: none;
 }
 .controls .icon-pause {
   position: absolute;
   top: 5px; left: 55%;
   width: 25px; height: 25px;
   z-index: 9999;
+  display: none;
 }
 
 /*//------main======================================================*/
@@ -232,7 +232,7 @@ article.main-slide {
   height: 100%;
 }
 .new-product ul li .wrap img{ width: 100%;}
-.new-product ul li .wrap .img-box{margin-left: 10px;}
+.new-product ul li .wrap .img-box{margin: 0px 5px 0px 5px;}
 .new-product ul li .wrap .text-box p{margin-left: 10px; font-size: 12px;}
 /*//-------/new product=====================================================*/
 
@@ -253,7 +253,7 @@ article.main-slide {
   margin-top:10px;
   padding: 5px 15px; box-sizing: border-box;
 }
-.survice .swiper-pagination {bottom: 15px; width: 100%;}
+.survice .swiper-pagination {bottom: 3px; width: 100%;}
 
 .survice .swiper-pagination-bullet{
   width: 40px; height: 5px;
