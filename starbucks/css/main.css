@@ -75,9 +75,10 @@
 }
 
 
-.blind{font-size: 0; text-indent: -9999px; position: absolute; left:-9999px;}
+
 
 /*  General CSS*/
+.blind{font-size: 0; text-indent: -9999px; position: absolute; left:-9999px;}
 .wrapper{
 	width: 1200px;
 	height: auto;

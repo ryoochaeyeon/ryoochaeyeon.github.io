@@ -176,7 +176,7 @@ header .gnb .swiper-slide span{
     position: relative;
     right: 145px;
     color: #fff;
-    z-index: 99;
+    z-index: 98;
   }
 .main-slide .controls .swiper-pagination::before{
       content: '';
@@ -209,7 +209,7 @@ header .gnb .swiper-slide span{
     position: absolute;
     bottom: 5px;
     right: 120px;
-    z-index: 8;
+    z-index: 99;
     width: 30px;height: 30px;
     opacity: 1;
     display: none;
@@ -218,7 +218,7 @@ header .gnb .swiper-slide span{
     position: absolute;
     bottom: 5px;
     right: 120px;
-    z-index: 8;
+    z-index: 99;
     width: 30px; height: 30px;
     opacity: 1;
     background: url(../img/pause.png) no-repeat;
