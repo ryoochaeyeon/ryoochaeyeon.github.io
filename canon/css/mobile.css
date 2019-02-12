@@ -210,13 +210,13 @@ article.main-slide {
 {color: #fff; top: 8px;}
 .controls .icon-play{
   position: absolute;
-  top: 5px; left: 55%;
+  top: 5px; left: 60%;
   width: 25px; height: 25px;
   z-index: 9999;
 }
 .controls .icon-pause {
   position: absolute;
-  top: 5px; left: 55%;
+  top: 5px; left: 60%;
   width: 25px; height: 25px;
   z-index: 9999;
   display: none;
