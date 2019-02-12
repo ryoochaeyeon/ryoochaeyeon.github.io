@@ -47,6 +47,10 @@ img {width: 100%;}
   width: 25px; height: 25px;
   background-position: -307px -75px;
 }
+.icon-pause{
+  width: 25px; height: 25px;
+  background-position: -307px -75px;
+}
 .icon-registration {
   width: 50px; height: 50px;
   background-position: -5px -40px;
@@ -215,11 +219,9 @@ article.main-slide {
   position: absolute;
   top: 5px; left: 55%;
   width: 25px; height: 25px;
-  background: url(../img/mobile/icon-pause.png) no-repeat;
   z-index: 9999;
 }
 
-{color: #fff; width: 50px; top: 6px; font-size: 20px;}
 /*//------main======================================================*/
 
 /*//------new product======================================================*/
