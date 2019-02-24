@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DISNEY</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+  <script src="js/flip.js"></script>
+  <script src="js/main.js"  charset="utf-8"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWkuAc28UJGT6Du4yZNyMWfkOhi3EancI&callback=initMap"></script>
+</head>
+<body>
+  <header>
+    <h1><img src="img/logo.png" alt="disney"></h1>
+
+    <!-- 모바일 토글메뉴  -->
+    <input type="checkbox" id="btn-menu">
+    <label for="btn-menu" class="btn-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <!-- / 모바일 -->
+
+    <!-- 네비게이션 -->
+   <nav>
+      <ul class="gnb">
+        <li><a href="#">FEATURE FILMS</a></li>
+        <li><a href="#">MARVEL</a></li>
+        <li><a href="#">MOVIE</a></li>
+        <li><a href="#">EVENT</a></li>
+        <li class="mobile"><a href="#">ABOUT</a></li>
+        <li class="mobile"><a href="#">CONTACT</a></li>
+      </ul>
+    <!-- / 네비게이션 -->
+
+      <div class="language">
+        <a href="#">EN</a>
+        <ul>
+          <li><a href="#" class="active">EN</a></li>
+          <li><a href="#">KR</a></li>
+          <li><a href="#">JP</a></li>
+        </ul>
+      </div>
+      <ul class="sns">
+        <li><a href="#"><img src="img/facebook.png" alt="페이스북"></a></li>
+        <li><a href="#"><img src="img/instagram.png" alt="인스타그램"></a></li>
+        <li><a href="#"><img src="img/youtube.png" alt="유튜브"></a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- /header -->
+
+  <section>
+    <article class="swiper-container main-slide">
+      <h2 class="blind">메인슬라이드</h2>
+       <div class="swiper-wrapper">
+        <div class="swiper-slide slide1 bg">
+          <div class="text-box">
+            <h3>Marvel Studios Tenth Anniversary Story</h3>
+            <p>Disney Movie Rewards Celebrates Marvel Studios' 10th Anniversary with Second Pin Collection Release From 100% Soft</p>
+          </div>
+        </div>
+        <div class="swiper-slide slide2 bg">
+          <div class="text-box">
+            <h3>The Charming Disney Princesses</h3>
+            <p>Disney Princess Animation The princesses in the animation have different beauty and are good at catching characteristics</p>
+          </div>
+        </div>
+        <div class="swiper-slide slide3">
+            <video class="video" src="video/frozen2.mp4" autoplay loop muted></video>
+        </div>
+      </div>
+      <div class="controls">
+        <div class="swiper-pagination">
+        </div>
+     </div>
+    </article>
+    <!-- / 메인슬라이드 -->
+
+    <!-- FEATURE FILMS 영역 -->
+     <article class="pixar">
+      <div class="wrapper">
+        <div class="row">
+          <div class="col-sm-6 col-xs-12">
+            <div class="col-sm-6 col-xs-12 film1 wrap">
+              <p>FEATURE FILMS</p>
+              <img src="img/film1.jpg" alt="feature film">
+            </div>
+            <div class="col-sm-6 col-xs-12 film2" >
+              <div class="wrap pixar1">
+                <img src="img/film2.jpg" alt="주토피아">
+              </div>
+              <div class="wrap pixar2">
+                <img src="img/film3.jpg" alt="코코">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <div class="col-sm-12 col-xs-12">
+              <div class="col-sm-6 col-xs-12 wrap">
+                <img src="img/film4.jpg" alt="라푼젤">
+              </div>
+              <div class="col-sm-6 col-xs-12 film3 wrap">
+                <img src="img/film5.jpg" alt="겨울왕국">
+              </div>
+            </div>
+            <div class="col-sm-12 col-xs-12 wrap">
+              <img src="img/film6.jpg" alt="빅히어로">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-xs-12 film5 wrap">
+            <img src="img/film7.jpg" alt="주먹왕 랄프">
+          </div>
+          <div class="col-sm-6 col-xs-12 film4 ">
+            <div class="col-sm-6 col-xs-12 wrap">
+              <img src="img/film8.jpg" alt="인사이드아웃">
+            </div>
+            <div class="col-sm-6 col-xs-12 wrap" >
+              <img src="img/film9.jpg" alt="몬스터주식회사">
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  <!-- / FEATURE FILMS -->
+
+  <!-- 마블 영역 -->
+    <article class="marvel">
+      <h2><span>MARVEL</span></h2>
+       <div class="preview">
+        <div class="marvel-pre">
+          <div class="video-box">
+            <video class="main-trailer" src="video/captain.mp4" controls loop muted ></video>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-xs-6">
+              <img src="img/captain-g.jpg" alt="캡틴아메리카" class="trailer1">
+            </div>
+            <div class="col-sm-6 col-xs-6">
+              <img src="img/thor-g.jpg" alt="토르" class="trailer2">
+            </div>
+            <div class="col-sm-6 col-xs-6">
+              <img src="img/avengers-g.jpg" alt="어벤저스" class="trailer3">
+            </div>
+            <div class="col-sm-6 col-xs-6">
+              <img src="img/spiderman-g.jpg" alt="스파이더맨" class="trailer4">
+            </div>
+          </div>
+        </div>
+        <div class="top-button">
+          <button class="icon icon-topbtn"></button>
+          <ul>
+            <li><a href="#"><i class="icon icon-share"></i></a></li>
+            <li><a href="#"><i class="icon icon-instagram"></a></i></li>
+            <li><a href="#"><i class="icon icon-facebook"></a></i></li>
+            <li><a href="#"><i class="icon icon-youtube"></a></i></li>
+            <li><button class="icon icon-close"></button></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+    <!-- / 마블 -->
+
+    <!-- movie -->
+    <article class="movie">
+      <h2>MOVIE</h2>
+      <div class="swiper-container movie-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="front">
+              <img src="img/lionking.jpg" alt="라이온킹">
+            </div>
+						<div class="back">
+							<div class="release-back-wrap">
+								<span>The Lion King</span>
+								<span>Opening date: 2019.07.19 / 2019.07</span>
+								<a href="#">MORE</a>
+							</div>
+						</div>
+            </div>
+
+          <div class="swiper-slide">
+            <div class="front">
+              <img src="img/dumbo.jpg" alt="덤보">
+            </div>
+            <div class="back">
+              <div class="release-back-wrap">
+                <span>Dumbo</span>
+                <span>Opening date: 2019.07.19 / 2019.07.20</span>
+                <a href="#">MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="front">
+              <img src="img/mary.jpg" alt="메리포핀스리턴즈">
+            </div>
+            <div class="back">
+              <div class="release-back-wrap">
+                <span>Mary Poppins Returns</span>
+                <span>Opening date: 2018.12.19 / 2019.02.14</span>
+                <a href="#">MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="front">
+              <img src="img/nutcracker.jpg" alt="호두까기 인형과 4개의 왕국">
+            </div>
+            <div class="back">
+              <div class="release-back-wrap">
+                <span>The Nutcracker and the Four Realms</span>
+                <span>Opening date: 2018.11.02 / 2018.12.06</span>
+                <a href="#">MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="front">
+              <img src="img/pooh.jpg" alt="곰돌이 푸">
+            </div>
+            <div class="back">
+              <div class="release-back-wrap">
+                <span>Christopher Robin</span>
+                <span>Opening date: 2018.08.03 / 2018.10.03</span>
+                <a href="#">MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="front">
+              <img src="img/beauty.jpg" alt="">
+            </div>
+            <div class="back">
+              <div class="release-back-wrap">
+                <span>Beauty and the Beast</span>
+                <span>Opening date: 2017.03.17 / 2017.03.16</span>
+                <a href="#">MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="front">
+              <img src="img/time.jpg" alt="시간의 주름">
+            </div>
+						<div class="back">
+							<div class="release-back-wrap">
+								<span>A Wrinkle in Time</span>
+								<span>Opening date: 2018.03.09</span>
+								<a href="#">MORE</a>
+							</div>
+						</div>
+            </div>
+
+          <div class="swiper-slide">
+            <div class="front">
+              <img src="img/caribbean.jpg" alt="캐리비안의 해적">
+            </div>
+            <div class="back">
+              <div class="release-back-wrap">
+                <span>Pirates of the Caribbean</span>
+                <span>Opening date: 2017.05.26 / 2017.05.24</span>
+                <a href="#">MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="front">
+              <img src="img/bfg.jpg" alt="마이 리틀 자이언트">
+            </div>
+            <div class="back">
+              <div class="release-back-wrap">
+                <span>The BFG</span>
+                <span>Opening date: 2016.07.01 / 2016.08.10</span>
+                <a href="#">MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="front">
+              <img src="img/alice.jpg" alt="거울나라의 앨리스">
+            </div>
+            <div class="back">
+              <div class="release-back-wrap">
+                <span>Alice Through the Looking Glass</span>
+                <span>Opening date: 2016.05.27 / 2016.09.07</span>
+                <a href="#">MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="front">
+              <img src="img/junglebook.jpg" alt="정글북">
+            </div>
+            <div class="back">
+              <div class="release-back-wrap">
+                <span>The Jungle Book</span>
+                <span>Opening date: 2019.07.19 / 2019.07</span>
+                <a href="#">MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="front">
+              <img src="img/malefique.jpg" alt="말레피센트">
+            </div>
+            <div class="back">
+              <div class="release-back-wrap">
+                <span>Maleficent</span>
+                <span>Opening date: 2014.05.30 / 2014.05.29</span>
+                <a href="#">MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- /movie 영역 -->
+
+    <!-- 디즈니 지도 -->
+     <article class="showroom">
+      <div id="map"></div>
+    </article>
+  </section>
+
+  <footer>
+    <h2><img src="img/footerlogo.png" alt="disney"></h2>
+    <p class="title">SITEMAP</p>
+    <div class="sitemap" id="title">
+      <ul class="col1">
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">About Disney</a></li>
+        <li><a href="#">Disney Help</a></li>
+        <li><a href="#">Career</a></li>
+        <li><a href="#">Advertise With Us</a></li>
+      </ul>
+
+      <ul class="col2">
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Your California Privacy Rights</a></li>
+        <li><a href="#">Legal Notices</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Children's Online Privacy Policy</a></li>
+        <li><a href="#">Interest-Based Ads</a></li>
+      </ul>
+    </div>
+
+    <span class="copyright">©Disney ©Disney/Pixar ©MARVEL © & ™ Lucasfilm Ltd</span>
+  </footer>
+
+
+  <!-- 팝업창 -->
+   <div class="pixar-popup">
+     <h2 class="blind">애니메이션 팝업창</h2>
+     <button class="icon icon-close">
+       <span class="blind">닫기</span>
+     </button>
+    <div class="swiper-container">
+      <div class="swiper-wrapper"></div>
+      <div class="controls">
+         <div class="swiper-button-next"><i class="icon icon-next"></i></div>
+          <div class="swiper-button-prev"><i class="icon icon-prev"></i></div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <!-- / 팝업창 -->
+</body>
+</html>
