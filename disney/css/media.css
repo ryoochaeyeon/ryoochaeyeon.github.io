@@ -10,6 +10,7 @@
 /* 모바일 */
 @media screen and (max-width:767px) {
   /* header */
+  body{ font-family:'bodoni';}
   header.bg{background: rgba(0,0,0,0.7); height: 80px;}
   h1{right: 0px; top: 15px; z-index: 9999;}
   h1 img{width: 80%;}
