@@ -13,7 +13,7 @@ li{list-style: none;}
 a{text-decoration: none;}
 button{outline: 0; border: 0; background: 0; cursor: pointer;}
 .blind{font-size: 0; text-indent: -9999px; position: absolute; left: -9999px;}
-body{font-family: 'Helvetica'; font-weight: lighter;}
+body{font-family: 'Helvetica'; font-family:'bodoni'; font-weight: lighter;}
 section{position: relative;}
 article{position: relative; margin-top: 100px;}
 #btn-menu{display: none;}
