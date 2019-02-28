@@ -2,7 +2,7 @@
 
 *   Privado Media Queries
 
-TOC : 
+TOC :
 
 1. screenwidth greater than 1400px (Large Screens)
 2. screenwidth greater than 1024px (Medium Screen/Large Tablets)
@@ -235,7 +235,7 @@ TOC :
 }
 
 .recognition .rec-list ul li h5 {
-  margin: 0;
+  margin: 0 101px;
 }
 
 .portfolio-items figure img {
@@ -506,7 +506,7 @@ TOC :
 }
 
 .skills .section-title {
-  font-size: 24px;  
+  font-size: 24px;
   padding: 20px;
 }
 
@@ -655,7 +655,7 @@ TOC :
   width: 100%;
 }
 
-.service-list .service {  
+.service-list .service {
   margin: 10px auto;
 }
 
