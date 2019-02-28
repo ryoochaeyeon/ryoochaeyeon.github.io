@@ -198,7 +198,7 @@ TOC :
 .service-list {
   width: 95%;
 }
-
+.service-list .service p{font-size: 13px;}
 .fun-facts {
   padding: 10px;
 }
