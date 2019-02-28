@@ -133,6 +133,7 @@ TOC :
   position: absolute;
 }
 
+.service-list .service p{font-size: 13px;}
 
 .hire-me.btn:after, .download-resume.btn:after{
 	content: "";
