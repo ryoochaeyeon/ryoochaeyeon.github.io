@@ -124,14 +124,14 @@ jQuery(document).ready(function($) {
         animateScale: true
     };
     var data = {
-        html_css: [{
+        photoshop_illustrator: [{
             value: 95,
             color: "#404148"
         }, {
             value: 5,
             color: "#fff"
         }],
-        sass: [{
+        html_css: [{
             value: 90,
             color: "#404148"
         }, {
@@ -145,25 +145,25 @@ jQuery(document).ready(function($) {
             value: 25,
             color: "#fff"
         }],
-        rails: [{
+        javascript: [{
             value: 60,
             color: "#404148"
         }, {
             value: 40,
             color: "#fff"
         }],
-        backbone: [{
+        aftereffect: [{
             value: 50,
             color: "#404148"
         }, {
             value: 50,
             color: "#fff"
         }],
-        photoshop: [{
-            value: 75,
+        premiere: [{
+            value: 100,
             color: "#404148"
         }, {
-            value: 25,
+            value: 0,
             color: "#fff"
         }]
     };
