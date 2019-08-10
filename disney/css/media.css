@@ -40,10 +40,12 @@
   #btn-menu:checked + label span:nth-child(3){height: 3px; transform: rotate(45deg);}
   #btn-menu:checked ~ nav{left: 0;}
 
+
   nav{position: fixed;
     top: 0; bottom: 0; left: -150%;
     background: #000;
   }
+
   header nav .gnb{position: absolute; top: 40px; left: 25px; padding: 0 0;}
   header nav .gnb li{float: none; width: 100%; margin: 30px 0;}
   .mobile{display: block;}
@@ -82,7 +84,6 @@
   .text{position: absolute; left: 20px; display: none;}
   .main-slide .swiper-pagination-bullet-active .text{
     display: block; top: 80px;
-
   }
   /* /===메인영역 */
 

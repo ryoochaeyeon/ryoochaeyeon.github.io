@@ -50,6 +50,10 @@ $(function(){
           $(this).css('background-image','url('+moBg[i]+')');
       })
       $('.main-slide .swiper-pagination-bullet-active').toggleClass('text');
+
+      $('nav > .gnb > li>a:nth-child(1)').on('click',function(){
+        $('nav > .gnb').toggleClass('btn-go')
+      })
     }else{
       $('.bg').each(function(i){
         $(this).css('background-image','url('+pcBg[i]+')');
@@ -71,6 +75,9 @@ $(function(){
     $('.language ul li a').removeClass('active');
     $(this).addClass('active');
   })
+
+
+
 
 
   $(window).scroll(function(){
