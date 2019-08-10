@@ -50,10 +50,6 @@ $(function(){
           $(this).css('background-image','url('+moBg[i]+')');
       })
       $('.main-slide .swiper-pagination-bullet-active').toggleClass('text');
-
-      $('nav > .gnb > li>a:nth-child(1)').on('click',function(){
-        $('nav > .gnb').toggleClass('btn-go')
-      })
     }else{
       $('.bg').each(function(i){
         $(this).css('background-image','url('+pcBg[i]+')');
@@ -75,9 +71,6 @@ $(function(){
     $('.language ul li a').removeClass('active');
     $(this).addClass('active');
   })
-
-
-
 
 
   $(window).scroll(function(){
@@ -249,5 +242,64 @@ $(function(){
     }else{
       $('header').removeClass('bg');
     }
-  })
+  });
+
+  var sectionTopValue=0;
+    $(window).resize(function(){
+        w=$(window).width();
+
+        if(w>767){
+            //마우스 휠
+            sectionTopValue=70;
+            $('.window').on('mousewheel',function(e,delta){
+                if(delta>0){
+                    if($(this).prev().is('.window')){
+                        var prev=$(this).prev().offset().top;
+                        $('html').stop().animate({
+                           scrollTop:prev-70
+                       },1000)
+                   }
+               }else if(delta<0){
+                    if($(this).next().is('.window')){
+                        var next=$(this).next().offset().top;
+                        $('html').stop().animate({
+                            scrollTop:next-70
+                        },1000)
+                    }
+               }
+           })
+        }else{
+            sectionTopValue=5;
+        }
+
+        //스파이 스크롤
+        var windowH=$('.window').height();
+        $(window).on('scroll',function(){
+            var scrollTop=$(window).scrollTop()+sectionTopValue;
+            var sec1=Math.floor($('#film').offset().top);
+            var sec2=Math.floor($('#marvel').offset().top);
+            var sec3=Math.floor($('#movie').offset().top);
+            var i=0;
+            if(scrollTop>=0 && scrollTop<sec2){
+                i=0;
+            }else if(scrollTop>=sec2 && scrollTop<sec3){
+                i=1;
+            }else if(scrollTop>=sec3 && scrollTop<sec4){
+                i=2;
+            }else if(scrollTop>=sec4){
+                i=3;
+            }
+        })
+    }).resize();
+
+
+    //메뉴클릭
+    $('header nav ul li a').on('click',function(e){
+      e.preventDefault();
+      id=$(this).attr('href');
+      sectionTop=$(id).offset().top;
+      $('html, body').stop().animate({
+        scrollTop:sectionTop-sectionTopValue
+      })
+    });
 });
